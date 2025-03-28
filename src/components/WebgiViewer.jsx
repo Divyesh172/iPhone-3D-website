@@ -1,15 +1,14 @@
-import React, {useRef,forwardRef ,useCallback, useEffect, useImperativeHandle, useState} from "react";
+import React, {forwardRef, useCallback, useEffect, useImperativeHandle, useRef, useState} from "react";
 import {
-    ViewerApp,
     AssetManagerPlugin,
-    ProgressivePlugin,
-    TonemapPlugin,
-    SSRPlugin,
-    SSAOPlugin,
     BloomPlugin,
     GammaCorrectionPlugin,
-    mobileAndTabletCheck,
-    GBufferPlugin
+    GBufferPlugin,
+    ProgressivePlugin,
+    SSAOPlugin,
+    SSRPlugin,
+    TonemapPlugin,
+    ViewerApp
 } from "webgi";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
@@ -29,7 +28,7 @@ const WebgiViewer = forwardRef((props, ref) => {
         const [positionRef, setPositionRef] = useState(null);
 
         useImperativeHandle(ref, () => ({
-            triggerPreview(){
+            triggerPreview() {
                 gsap.to(positionRef, {
                     x: 13.04,
                     y: -2.01,

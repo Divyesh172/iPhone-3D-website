@@ -9,7 +9,7 @@ function Nav() {
             <div className="nav-content">
                 <ul className="list-styled">
                     <li>
-                        <img src={Logo} alt="Apple" />
+                        <img src={Logo} alt="Apple"/>
                     </li>
                     <li>
                         <a className="link-styled">Store</a>
@@ -42,10 +42,10 @@ function Nav() {
                         <a className="link-styled">Support</a>
                     </li>
                     <li>
-                        <img src={Search} alt="Search" />
+                        <img src={Search} alt="Search"/>
                     </li>
                     <li>
-                        <img src={Store} alt="Store" />
+                        <img src={Store} alt="Store"/>
                     </li>
                 </ul>
             </div>
